@@ -1,16 +1,4 @@
 
-
-
-header{
-    h1{
-    color:black;
-    font-size: 30px;
-    /* text-align: center; */
+body {
+  font-family: Arial, sans-serif;
 }
-    h2{
-        font-size: 85px;
-        text-align: center;
-    }
-
-}
-
