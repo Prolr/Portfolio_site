@@ -10,7 +10,7 @@
 body {
   font-family: Arial, sans-serif;
   
-  
+   
 }
 
 
@@ -22,6 +22,7 @@ header{
       padding: 1.6%;
       position: fixed;
       backdrop-filter: blur(20px);
+      z-index: 999;
 }
       .h{ 
         width: 20%;
@@ -51,6 +52,26 @@ section{
           display: flex;
           flex-direction: column;
       }
+
+.DivCards button:hover{
+  opacity: 0.7;
+  /* mix-blend-mode: color-dodge; */
+  background-color: rgb(160, 2, 2);
+  color: white;
+  
+  
+}
+.DivCards button:hover img {
+  filter: brightness(0) invert(1); 
+  /* Nota: invert(1) é o máximo para branco puro. */
+}
+
+button{
+  opacity: 1;          /* Totalmente visível por padrão */
+    transition: 0.3s;    /* Faz a mudança ser suave, não um corte seco */
+    cursor: pointer;
+}
+
 .primeira_sessao {
 
   background-image: url(asseds/setup\ de\ computador.avif);
@@ -76,7 +97,7 @@ section{
     font-size: 5vw;
      margin-top: -9%;
      mix-blend-mode: color-dodge;
-     color: rgb(237, 235, 235);
+     color: rgb(240, 236, 236);
      
   }
    
@@ -164,6 +185,11 @@ section{
   
 }
 
-
+.ver_projeto{
+  background-color: rgba(212, 208, 208, 0.113);
+  color: white;
+  font-size: 13px;
+  mix-blend-mode: color-dodge;
+}
 
 
