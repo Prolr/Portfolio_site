@@ -2,26 +2,36 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 
 
 body {
   font-family: Arial, sans-serif;
+  
+  
 }
 
 
 header{
       display: flex;
-      background-color: red;
+      background-color: rgba(229, 228, 228, 0.681);
       width: 100%;
       justify-content: space-between;
-      padding: 1.8%;
+      padding: 1.6%;
+      position: fixed;
+      backdrop-filter: blur(20px);
+}
+      .h{ 
+        width: 20%;
+      }
 
       .h ul{
           list-style-type: none; 
           width: 60%;
-          font-size: 20px;
+          font-size: 24px;
+          
 
           
       }
@@ -36,4 +46,124 @@ header{
 
       }
 
+section{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+.primeira_sessao {
+
+  background-image: url(asseds/setup\ de\ computador.avif);
+   background-size: cover;
+   background-position: center ;
+   background-repeat: no-repeat;
+   opacity: 0.90;
+   height: 100vh;
+   justify-content: center; 
+   align-items: center; 
+   
+  color: aliceblue;
+  
+  /* display: flex; */
+  /* flex-direction: column; */
+    /* centraliza horizontal */
+  /* centraliza vertical */
+  min-height: 100vh; /* ocupa a tela toda */
+  /* background-image: ; */
+  
+  
+  h1{
+    font-size: 5vw;
+     margin-top: -9%;
+     mix-blend-mode: color-dodge;
+     color: rgb(237, 235, 235);
+     
+  }
+   
+   
+   
 }
+
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+ 
+  text-align: left;
+  
+}
+.item2 {
+  display: flex;
+  align-items: center; 
+  gap: 12px;
+
+}
+.item3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.item img {
+  width: 35px;
+  height: 40px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+.item2 img {
+ width: 30px;         /* Ajuste o tamanho conforme preferir */
+  height: 40px;
+  object-fit: contain; /* Garante que a imagem não distorça */
+  flex-shrink: 0;   /* Impede que a imagem diminua se o texto for muito longo */
+  
+
+}
+.item3 img {
+  width: 30px;
+  height: 40px;
+  object-fit: contain;
+}
+
+
+.DivCards{
+
+
+  display: flex;         /* Coloca todos os filhos na mesma linha */
+    align-items: center;   /* Alinha todos verticalmente pelo centro */
+    justify-content: center; /* Centraliza o grupo de botões na tela (opcional) */
+    gap: 15px;             /* Define o espaçamento entre os botões */
+    flex-wrap: wrap;
+ 
+
+  button{
+
+  
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 9px;
+  text-align: left;
+  border-radius: 10px;
+  border: none;
+  padding: 1px 29px;
+  display: inline-flex;
+  
+
+   img{
+    width: 35px;
+  height: 40px;
+  object-fit: contain;
+  }
+  
+  }
+  
+}
+
+
+
+
