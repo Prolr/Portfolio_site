@@ -1,136 +1,117 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
-
-
 
 body {
   font-family: Arial, sans-serif;
-  
-   
 }
 
-
-header{
-      display: flex;
-      background-color: rgba(229, 228, 228, 0.681);
-      width: 100%;
-      justify-content: space-between;
-      padding: 1.6%;
-      position: fixed;
-      backdrop-filter: blur(20px);
-      z-index: 999;
+/* CABEÇALHO */
+header {
+  display: flex;
+  background-color: rgba(229, 228, 228, 0.681);
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.6%;
+  position: fixed;
+  backdrop-filter: blur(20px);
+  z-index: 999;
+  box-shadow:0 10px 10px rgba(0, 0, 0, 0.03) ;
 }
-      .h{ 
-        width: 20%;
-      }
+/* NOME RAFAEL DO CABEÇALHO */
+.h {
+  width: 20%;
+}
 
-      .h ul{
-          list-style-type: none; 
-          width: 60%;
-          font-size: 24px;
-          
+.h ul {
+  list-style-type: none;
+  width: 60%;
+  font-size: 24px;
+}
 
-          
-      }
-      
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+}
 
-      nav ul{
+/* TODAS AS section */
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-          display: flex;   
-          gap: 24px;
-          list-style-type: none; 
+/* BOTÕES DOS CARDS INICIAIS PARA APLICAR EFEITOS */
 
-
-      }
-
-section{
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-      }
-
-            /* BOTÕES DOS CARDS INICIAIS  */
-
-.DivCards button:hover{
+.DivCards button:hover {
   opacity: 0.7;
   /* mix-blend-mode: color-dodge; */
   background-color: rgb(160, 2, 2);
   color: white;
-  
-  
-  
 }
+
+/*  BOTÕES DOS CARDS INICIAIS PARA APLICAR EFEITOS EM IMG*/
 .DivCards button:hover img {
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
   /* Nota: invert(1) é o máximo para branco puro. */
-  
-  
+}
+/* APLICAR ALTERAÇÕES EM TODOS OS BOTÕES */
+button {
+  opacity: 1; /* Totalmente visível por padrão */
+  transition: 0.3s; /* Faz a mudança ser suave, não um corte seco */
+  cursor: pointer;
 }
 
-button{
-  opacity: 1;          /* Totalmente visível por padrão */
-    transition: 0.3s;    /* Faz a mudança ser suave, não um corte seco */
-    cursor: pointer;
-}
-
+/* AJUSTES DA PRIMEIRA SESSÃO E IMG */
 .primeira_sessao {
-
   background-image: url(asseds/retro-digital-art-illustration-person-using-radio-technology.jpg);
-   background-size: cover;
-   background-position: center ;
-   background-repeat: no-repeat;
-   /* opacity: 999px; */
-   height: 100vh;
-   min-height: 100vh; /* ocupa a tela toda */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* opacity: 999px; */
+  height: 100vh;
+  min-height: 100vh; /* ocupa a tela toda */
+  
 
-   justify-content: center; 
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
-   align-items: center; 
-   
+  align-items: center;
+
   color: rgb(255, 240, 240);
   position: relative;
   z-index: 1;
-   
-  
+
   display: flex;
   /* flex-direction: column; */
-    /* centraliza horizontal */
+  /* centraliza horizontal */
   /* centraliza vertical */
- 
-  /* background-image: ; */
-  
-  
-  h1{
-    font-size: 5vw;
-     margin-top: -9%;
-     mix-blend-mode: color-dodge;
-     color: rgb(240, 236, 236);
-     
-  }
-   
-   
-   
-}
 
+  /* background-image: ; */
+
+  /* ALTERAÇÃO NO TITULO PRINCIPAL  */
+  h1 {
+    font-size: 5vw;
+    margin-top: -9%;
+    mix-blend-mode: color-dodge;
+    color: rgb(240, 236, 236);
+  }
+}
 
 .item {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
- 
+
   text-align: left;
-  
 }
 .item2 {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 12px;
-
 }
 .item3 {
   display: flex;
@@ -139,6 +120,7 @@ button{
   gap: 12px;
   margin: 10px 0;
   text-align: left;
+  font-size: 19px;
 }
 
 .item img {
@@ -148,56 +130,44 @@ button{
   filter: brightness(0) invert(1);
 }
 .item2 img {
- width: 30px;         /* Ajuste o tamanho conforme preferir */
+  width: 30px; /* Ajuste o tamanho conforme preferir */
   height: 40px;
   object-fit: contain; /* Garante que a imagem não distorça */
-  flex-shrink: 0;   /* Impede que a imagem diminua se o texto for muito longo */
-  
-
+  flex-shrink: 0; /* Impede que a imagem diminua se o texto for muito longo */
 }
 .item3 img {
   width: 30px;
   height: 40px;
   object-fit: contain;
-
 }
 
+.DivCards {
+  display: flex; /* Coloca todos os filhos na mesma linha */
+  align-items: center; /* Alinha todos verticalmente pelo centro */
+  justify-content: center; /* Centraliza o grupo de botões na tela (opcional) */
+  gap: 15px; /* Define o espaçamento entre os botões */
+  flex-wrap: wrap;
 
-.DivCards{
+  button {
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 9px;
+    text-align: left;
+    border-radius: 10px;
+    border: none;
+    padding: 1px 29px;
+    display: inline-flex;
 
-
-  display: flex;         /* Coloca todos os filhos na mesma linha */
-    align-items: center;   /* Alinha todos verticalmente pelo centro */
-    justify-content: center; /* Centraliza o grupo de botões na tela (opcional) */
-    gap: 15px;             /* Define o espaçamento entre os botões */
-    flex-wrap: wrap;
- 
-
-  button{
-
-  
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin: 15px 9px;
-  text-align: left;
-  border-radius: 10px;
-  border: none;
-  padding: 1px 29px;
-  display: inline-flex;
-  
-
-   img{
-    width: 35px;
-  height: 40px;
-  object-fit: contain;
+    img {
+      width: 35px;
+      height: 40px;
+      object-fit: contain;
+    }
   }
-  
-  }
-  
 }
 
-.ver_projeto{
+.ver_projeto {
   background-color: rgba(255, 243, 243, 0.563);
   color: black;
   font-size: 16px;
@@ -205,3 +175,240 @@ button{
 }
 
 
+.segunda_sessao{
+  
+  align-items: center;
+   
+
+
+    .texto_sobre_mim{
+      max-width: 1200px;
+      margin: 2% ;
+      padding: 30px 35px;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03); 
+      color: #4b5563;
+      line-height: 1.8;
+     
+      
+     
+}
+
+
+.card-highlight {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9fafb;
+  border-left: 4px solid #3b82f6;
+  border-radius: 6px;
+  border-bottom: 2px solid #d4d1d1;
+  box-shadow:0 9px 10px rgba(203, 201, 201, 0.249);
+  margin: 5%;
+}
+
+h2{
+   display: flex;
+   justify-content: center;
+   font-size: 55px;
+   padding: 4%;
+   
+}
+
+ .DivCards2{
+  
+  flex-wrap: wrap;
+  display: flex;
+  margin: 4%;
+  
+  max-width: 72%;
+  gap: 30px;
+  
+  justify-content: center;
+}
+
+
+ .card1{
+  
+  justify-content: center;
+  
+  align-items: center;
+  padding: 20px 40px;
+  
+  width: 48%;
+  
+  border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03); 
+  
+  
+  img{
+        background-color: #dbd9d97a;
+        border-radius: 6px;
+        padding: 6px;
+        
+  }
+  
+   
+  } 
+ .card2{
+  justify-content: center;
+  
+  align-items: center;
+  padding: 20px 40px;
+  width: 48%;
+  border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03); 
+  
+  img{
+        background-color: #dbd9d97a;
+        border-radius: 6px;
+        padding: 6px;
+        
+  }
+  
+   
+  } 
+ .card3{
+  justify-content: center;
+  
+  align-items: center;
+  padding: 20px 40px;
+  width: 48%;
+  border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03); 
+  
+   img{
+        background-color: #dbd9d97a;
+        border-radius: 6px;
+        padding: 6px;
+        
+  }
+
+  } 
+ .card4{
+  justify-content: center;
+  
+  align-items: center;
+  padding: 20px 40px;
+  width: 48%;
+  border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03); 
+  
+    img{
+        background-color: #dbd9d97a;
+        border-radius: 6px;
+        padding: 6px;
+        
+  }
+
+  } 
+
+.card1:hover{
+  
+  border: 2px solid #b9b7b7;
+}
+.card2:hover{
+  
+  border: 2px solid #b9b7b7;
+}
+.card3:hover{
+  
+  border: 2px solid #b9b7b7;
+}
+.card4:hover{
+  
+  border: 2px solid #b9b7b7;
+}
+  
+}
+
+
+.terceira_sessao{
+
+  align-items: center;
+
+  h2{
+    /* margin: 2%; */
+    font-size: 30px;
+    font-size: 55px;
+   padding: 3%;
+   /* background-color: red; */
+
+  }
+
+
+  .banco_de_dados{
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    
+    
+  }
+
+  .card5{
+    justify-content: center;
+  /* background-color: #3b82f6; */
+  align-items: center;
+  
+  width: 280px;
+  }
+
+.buton_card5{
+  display: flex;
+  /* background-color: aqua; */
+  gap: 5%;
+  justify-content: center;
+  
+}
+   
+.border_card5{
+  
+  border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  height: 120px;
+  width: 40%;
+
+  
+
+}
+.buton_terceira_sessao{
+
+  flex-wrap: wrap;
+  display: flex;
+  margin: 4%;
+  align-items: center;
+  max-width: 80%;
+  gap: 30px;
+  background-color: #3b82f6;
+  justify-content: center;
+}
+
+
+.card6{
+   border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  height: 120px;
+  width: 40%;
+}
+
+.programacao{
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    
+    
+  }
+
+  .buton_card6{
+  display: flex;
+  /* background-color: aqua; */
+  gap: 5%;
+  justify-content: center;
+  
+}
+
+}
