@@ -357,11 +357,21 @@ h2{
   width: 280px;
   }
 
-.buton_card5{
+
+.buton_card5 {
   display: flex;
   /* background-color: aqua; */
   gap: 5%;
   justify-content: center;
+  
+  
+  
+button{
+        border-radius: 999px;
+        border: none;
+        height: 20px;
+        width: 80px;
+  }
   
 }
    
@@ -372,9 +382,15 @@ h2{
   height: 120px;
   width: 40%;
 
+
   
 
 }
+  .border_card5:hover{
+    
+    border: 2px solid #b9b7b7;
+  }
+
 .buton_terceira_sessao{
 
   flex-wrap: wrap;
@@ -383,16 +399,29 @@ h2{
   align-items: center;
   max-width: 80%;
   gap: 30px;
-  background-color: #3b82f6;
+  /* background-color: #3b82f6; */
   justify-content: center;
 }
 
 
-.card6{
+.border_card6{
    border-radius: 14px;
   border: 2px solid #e5e7eb;
   height: 120px;
   width: 40%;
+}
+
+.border_card6:hover{
+    
+    border: 2px solid #b9b7b7;
+  }
+
+.card6{
+    justify-content: center;
+  /* background-color: #3b82f6; */
+  align-items: center;
+  
+  width: 280px;
 }
 
 .programacao{
@@ -401,14 +430,85 @@ h2{
     padding: 4%;
     
     
+    
   }
 
   .buton_card6{
-  display: flex;
+   display: flex;
   /* background-color: aqua; */
   gap: 5%;
   justify-content: center;
+  align-items: center;
   
+  
+}
+.card7{
+   justify-content: center;
+  /* background-color: #3b82f6; */
+  align-items: center;
+  gap: 5%;
+  width: 280px;
+}
+.buton_card7{
+  display: flex;
+  /* background-color: aqua; */
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.border_card7{
+  border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  height: 120px;
+  width: 40%;
+}
+
+.border_card7:hover{
+    
+    border: 2px solid #b9b7b7;
+  }
+
+.desenvolvimento_web{
+  display: flex;
+    align-items: center;
+    padding: 4%;
+    
+}
+
+.buton_card8{
+   display: flex;
+  /* background-color: aqua; */
+  gap: 3%;
+  justify-content: center;
+  align-items: center;
+  
+
+    
+}
+
+.border_card8{
+  border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  height: 120px;
+  width: 40%;
+}
+.border_card8:hover{
+    
+    border: 2px solid #b9b7b7;
+  }
+.analise_e_visualizacao{
+  display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.buton_card5 button:hover{
+  background-color: #022051;
+  color: white;
 }
 
 }
+
+
