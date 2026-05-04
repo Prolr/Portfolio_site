@@ -1,14 +1,17 @@
+/* ================= RESET GLOBAL ================= */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Fonte padrão do site */
 body {
   font-family: Arial, sans-serif;
 }
 
-/* CABEÇALHO */
+/* ================= CABEÇALHO ================= */
+/* Header fixo com efeito de blur */
 header {
   display: flex;
   background-color: rgba(229, 228, 228, 0.681);
@@ -20,78 +23,71 @@ header {
   z-index: 999;
   box-shadow:0 10px 10px rgba(0, 0, 0, 0.03) ;
 }
-/* NOME RAFAEL DO CABEÇALHO */
+
+/* Área do nome/logo */
 .h {
   width: 20%;
 }
 
+/* Lista do nome/logo */
 .h ul {
   list-style-type: none;
   width: 60%;
   font-size: 24px;
 }
 
+/* Menu de navegação */
 nav ul {
   display: flex;
   gap: 24px;
   list-style-type: none;
 }
 
-/* TODAS AS section */
+/* ================= ESTRUTURA DAS SEÇÕES ================= */
 section {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* BOTÕES DOS CARDS INICIAIS PARA APLICAR EFEITOS */
+/* ================= BOTÕES (GERAL) ================= */
+/* Estilo padrão de todos os botões */
+button {
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
 
+/* Hover dos botões nos cards iniciais */
 .DivCards button:hover {
   opacity: 0.7;
-  /* mix-blend-mode: color-dodge; */
   background-color: rgb(160, 2, 2);
   color: white;
 }
 
-/*  BOTÕES DOS CARDS INICIAIS PARA APLICAR EFEITOS EM IMG*/
+/* Inverte cor da imagem dentro do botão */
 .DivCards button:hover img {
   filter: brightness(0) invert(1);
-  /* Nota: invert(1) é o máximo para branco puro. */
-}
-/* APLICAR ALTERAÇÕES EM TODOS OS BOTÕES */
-button {
-  opacity: 1; /* Totalmente visível por padrão */
-  transition: 0.3s; /* Faz a mudança ser suave, não um corte seco */
-  cursor: pointer;
 }
 
-/* AJUSTES DA PRIMEIRA SESSÃO E IMG */
+/* ================= PRIMEIRA SESSÃO (HERO) ================= */
 .primeira_sessao {
   background-image: url(asseds/retro-digital-art-illustration-person-using-radio-technology.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* opacity: 999px; */
   height: 100vh;
-  min-height: 100vh; /* ocupa a tela toda */
-  
+  min-height: 100vh;
 
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
   align-items: center;
+  display: flex;
 
   color: rgb(255, 240, 240);
   position: relative;
   z-index: 1;
 
-  display: flex;
-  /* flex-direction: column; */
-  /* centraliza horizontal */
-  /* centraliza vertical */
-
-  /* background-image: ; */
-
-  /* ALTERAÇÃO NO TITULO PRINCIPAL  */
+  /* Título principal */
   h1 {
     font-size: 5vw;
     margin-top: -9%;
@@ -100,19 +96,21 @@ button {
   }
 }
 
+/* ================= ITENS COM ÍCONES ================= */
 .item {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
-
   text-align: left;
 }
+
 .item2 {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 .item3 {
   display: flex;
   align-items: center;
@@ -123,31 +121,36 @@ button {
   font-size: 19px;
 }
 
+/* Ajustes das imagens */
 .item img {
   width: 35px;
   height: 40px;
   object-fit: contain;
   filter: brightness(0) invert(1);
 }
+
 .item2 img {
-  width: 30px; /* Ajuste o tamanho conforme preferir */
+  width: 30px;
   height: 40px;
-  object-fit: contain; /* Garante que a imagem não distorça */
-  flex-shrink: 0; /* Impede que a imagem diminua se o texto for muito longo */
+  object-fit: contain;
+  flex-shrink: 0;
 }
+
 .item3 img {
   width: 30px;
   height: 40px;
   object-fit: contain;
 }
 
+/* ================= CARDS INICIAIS ================= */
 .DivCards {
-  display: flex; /* Coloca todos os filhos na mesma linha */
-  align-items: center; /* Alinha todos verticalmente pelo centro */
-  justify-content: center; /* Centraliza o grupo de botões na tela (opcional) */
-  gap: 15px; /* Define o espaçamento entre os botões */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
   flex-wrap: wrap;
 
+  /* Botões como cards */
   button {
     align-items: center;
     justify-content: center;
@@ -159,6 +162,7 @@ button {
     padding: 1px 29px;
     display: inline-flex;
 
+    /* Ícones dentro do botão */
     img {
       width: 35px;
       height: 40px;
@@ -167,348 +171,554 @@ button {
   }
 }
 
+/* Botão secundário */
 .ver_projeto {
   background-color: rgba(255, 243, 243, 0.563);
   color: black;
   font-size: 16px;
-  /* mix-blend-mode: hue; */
 }
 
-
-.segunda_sessao{
-  
+/* ================= SEGUNDA SESSÃO ================= */
+.segunda_sessao {
   align-items: center;
-   
 
-
-    .texto_sobre_mim{
-      max-width: 1200px;
-      margin: 2% ;
-      padding: 30px 35px;
-      border-radius: 14px;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03); 
-      color: #4b5563;
-      line-height: 1.8;
-     
-      
-     
-}
-
-
-.card-highlight {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #f9fafb;
-  border-left: 4px solid #3b82f6;
-  border-radius: 6px;
-  border-bottom: 2px solid #d4d1d1;
-  box-shadow:0 9px 10px rgba(203, 201, 201, 0.249);
-  margin: 5%;
-}
-
-h2{
-   display: flex;
-   justify-content: center;
-   font-size: 55px;
-   padding: 4%;
-   
-}
-
- .DivCards2{
-  
-  flex-wrap: wrap;
-  display: flex;
-  margin: 4%;
-  
-  max-width: 72%;
-  gap: 30px;
-  
-  justify-content: center;
-}
-
-
- .card1{
-  
-  justify-content: center;
-  
-  align-items: center;
-  padding: 20px 40px;
-  
-  width: 48%;
-  
-  border-radius: 14px;
-  border: 2px solid #e5e7eb;
-  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03); 
-  
-  
-  img{
-        background-color: #dbd9d97a;
-        border-radius: 6px;
-        padding: 6px;
-        
-  }
-  
-   
-  } 
- .card2{
-  justify-content: center;
-  
-  align-items: center;
-  padding: 20px 40px;
-  width: 48%;
-  border-radius: 14px;
-  border: 2px solid #e5e7eb;
-  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03); 
-  
-  img{
-        background-color: #dbd9d97a;
-        border-radius: 6px;
-        padding: 6px;
-        
-  }
-  
-   
-  } 
- .card3{
-  justify-content: center;
-  
-  align-items: center;
-  padding: 20px 40px;
-  width: 48%;
-  border-radius: 14px;
-  border: 2px solid #e5e7eb;
-  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03); 
-  
-   img{
-        background-color: #dbd9d97a;
-        border-radius: 6px;
-        padding: 6px;
-        
+  /* Texto "sobre mim" */
+  .texto_sobre_mim {
+    max-width: 1200px;
+    margin: 2%;
+    padding: 30px 35px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03);
+    color: #4b5563;
+    line-height: 1.8;
   }
 
-  } 
- .card4{
-  justify-content: center;
-  
+  /* Card de destaque */
+  .card-highlight {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9fafb;
+    border-left: 4px solid #3b82f6;
+    border-radius: 6px;
+    border-bottom: 2px solid #d4d1d1;
+    box-shadow:0 9px 10px rgba(203, 201, 201, 0.249);
+    margin: 5%;
+  }
+
+  /* Título */
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    padding: 4%;
+  }
+
+  /* Container dos cards */
+  .DivCards2 {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 4%;
+    max-width: 72%;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  /* ===== CARDS 1 A 4 ===== */
+  .card1, .card2, .card3, .card4 {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    width: 48%;
+    border-radius: 14px;
+    border: 2px solid #e5e7eb;
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03);
+
+    img {
+      background-color: #dbd9d97a;
+      border-radius: 6px;
+      padding: 6px;
+    }
+  }
+
+  /* Hover dos cards */
+  .card1:hover,
+  .card2:hover,
+  .card3:hover,
+  .card4:hover {
+    border: 2px solid #b9b7b7;
+  }
+}
+
+/* ================= TERCEIRA SESSÃO ================= */
+.terceira_sessao {
   align-items: center;
-  padding: 20px 40px;
-  width: 48%;
-  border-radius: 14px;
-  border: 2px solid #e5e7eb;
-  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03); 
-  
+
+  h2 {
+    font-size: 50px;
+    padding: 3%;
+    margin-left: -2%;
+  }
+
+  /* ===== CARD 5 (Banco de Dados) ===== */
+  .banco_de_dados {
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    gap: 10px;
+
     img{
-        background-color: #dbd9d97a;
-        border-radius: 6px;
-        padding: 6px;
-        
+      background-color: #dbd9d97a;
+      border-radius: 6px;
+      padding: 4px;
+    }
   }
 
-  } 
+  .card5 {
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+  }
 
-.card1:hover{
+  .border_card5 {
+    border-radius: 7px;
+    border: 2px solid #e5e7eb;
+    height: 120px;
+    width: 48%;
+  }
+
+  .border_card5:hover {
+    border: 2px solid #b9b7b7;
+  }
+
+  .buton_card5 {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+
+    button {
+      border-radius: 999px;
+      border: none;
+      height: 20px;
+      width: 80px;
+      background-color: rgba(188, 206, 251, 0.244) ;
+      color: black;
+      
+    }
+  }
+
+  .buton_card5 button:hover {
+    background-color: #02122c;
+    color: whitesmoke;
+  }
+
+  /* Container geral dos cards */
+  .buton_terceira_sessao {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 4%;
+    align-items: center;
+    max-width: 80%;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  /* ===== CARD 6 (Programação) ===== */
+  .programacao {
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    gap: 10px;
+
+    img{
+      background-color: #dbd9d97a;
+      border-radius: 6px;
+      padding: 4px;
+    }
+  }
+
+  .card6 {
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+  }
+
+  .border_card6 {
+    border-radius: 7px;
+    border: 2px solid #e5e7eb;
+    height: 120px;
+    width: 48%;
+  }
+
+  .border_card6:hover {
+    border: 2px solid #b9b7b7;
+  }
+
+  .buton_card6 {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      border-radius: 999px;
+      border: none;
+      width: 70px;
+      height: 20px;
+       background-color: rgba(188, 206, 251, 0.244) ;
+    }
+  .jav{
+    width: 80px;
+  }
+  }
+
+  .buton_card6 button:hover {
+    background-color: #02122c;
+    color: whitesmoke;
+  }
+
+  /* ===== CARD 7 ===== */
+  .card7 {
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 280px;
+  }
+
+  .border_card7 {
+    border-radius: 7px;
+    border: 2px solid #e5e7eb;
+    height: 120px;
+    width: 48%;
+  }
+
+  .border_card7:hover {
+    border: 2px solid #b9b7b7;
+  }
+
+  .buton_card7 {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    
+    button{
+      border-radius: 999px;
+      border: none;
+      width: 50px;
+      height: 20px;
+       background-color: rgba(188, 206, 251, 0.244) ;
+    }
+   
+    
+  .resp{
+    width: 130px;
+  }
+  .jav{
+    width: 80px;
+  }
+  }
+    .buton_card7 button:hover {
+    background-color: #02122c;
+    color: whitesmoke;
+  }
+
+  /* ===== CARD 8 ===== */
+  .desenvolvimento_web {
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    gap: 10px;
+    width: 130%;
+    
+
+    img{
+      background-color: #dbd9d97a;
+      border-radius: 6px;
+      padding: 4px;
+    }
+  }
+
+  .analise_e_visualizacao {
+    display: flex;
+    align-items: center;
+    padding: 2.5%;
+    gap: 10px;
+    img{
+      background-color: #dbd9d97a;
+      border-radius: 6px;
+      padding: 7px;
+    }
+  }
+
+  .border_card8 {
+   border-radius: 7px;
+    border: 2px solid #e5e7eb;
+    height: 120px;
+    width: 48%;
+  }
+
+  .border_card8:hover {
+    border: 2px solid #b9b7b7;
+  }
+
+  .buton_card8 {
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   
-  border: 2px solid #b9b7b7;
-}
-.card2:hover{
+    button{
+      border: none;
+      border-radius: 999px;
+      height: 20px;
+      width: 70px;
+      background-color: rgba(188, 206, 251, 0.244) ;
+      
+    }
+  .dataanaly{
+    width: 90px;
+  }
+  .statist{
+    width: 120px;
+  }
+  .datavi{
+    width: 120px;
+  }
   
-  border: 2px solid #b9b7b7;
-}
-.card3:hover{
+  }
+
+ .buton_card8 button:hover {
+    background-color: #02122c;
+    color: whitesmoke;
+  }
+ 
+
+.card9{
+ border: 2px solid #e5e7eb;
+ border-radius: 16px;
+ width: 50%;
+ gap: 10px;
+ padding: 2%;
   
-  border: 2px solid #b9b7b7;
+  h3 {
+    font-size: 25px;
+    padding: 3%;
+    justify-content: center;
+    display: flex;
+    
+  }
+  p{
+     text-indent: 30px;
+      padding-left: 5px;
+      line-height: 1.5;
+      color: #4b5563;
 }
-.card4:hover{
-  
-  border: 2px solid #b9b7b7;
-}
-  
-}
+      
+  }
 
 
-.terceira_sessao{
+           
 
-  align-items: center;
+
+
+}
+                                   /* ================= QUARTA SESSÃO ================= */
+  
+
+.quarta_sessão{
+
+  
 
   h2{
-    /* margin: 2%; */
-    font-size: 30px;
-    font-size: 55px;
-   padding: 3%;
-   /* background-color: red; */
-
-  }
-
-
-  .banco_de_dados{
-    display: flex;
-    align-items: center;
-    padding: 4%;
-    
-    
-  }
-
-  .card5{
+    font-size: 50px;
+    padding: 3%;
     justify-content: center;
-  /* background-color: #3b82f6; */
-  align-items: center;
-  
-  width: 280px;
-  }
-
-
-.buton_card5 {
-  display: flex;
-  /* background-color: aqua; */
-  gap: 5%;
-  justify-content: center;
-  
-  
-  
-button{
-        border-radius: 999px;
-        border: none;
-        height: 20px;
-        width: 80px;
-  }
-  
-}
-   
-.border_card5{
-  
-  border-radius: 14px;
-  border: 2px solid #e5e7eb;
-  height: 120px;
-  width: 40%;
-
-
-  
-
-}
-  .border_card5:hover{
+    display: flex;
     
-    border: 2px solid #b9b7b7;
+    margin-top: 8%
+    
+  }
+  
+  .subtitulo{
+    justify-content: center;
+    display: flex;
+    color: #4b5563;
+    font-size: 18px;
+    padding: 5%;
+    
+    margin-top: -5%;
+    
   }
 
-.buton_terceira_sessao{
 
+.card10,
+.card11,
+.card12,
+.card13 {
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+
+  flex: 1 1 45%;
+  max-width: 500px;
+}
+
+.card10:hover{
+ border: 2px solid #b9b7b7;
+}
+
+.card11:hover{
+ border: 2px solid #b9b7b7;
+}
+
+.card12:hover{
+ border: 2px solid #b9b7b7;
+}
+
+.card13:hover{
+ border: 2px solid #b9b7b7;
+}
+
+
+.vdd {
+  display: flex;
   flex-wrap: wrap;
-  display: flex;
-  margin: 4%;
-  align-items: center;
-  max-width: 80%;
   gap: 30px;
-  /* background-color: #3b82f6; */
   justify-content: center;
+  
 }
 
+ .dashboard_de_visualização,
+.aplicacaoweb,.scripts_automacao{
 
-.border_card6{
-   border-radius: 14px;
-  border: 2px solid #e5e7eb;
-  height: 120px;
-  width: 40%;
-}
+ display: flex;
+    align-items: center;
+    padding: 4%;
+    gap: 10px;
 
-.border_card6:hover{
+    img{
+      background-color: #dbd9d97a;
+      border-radius: 6px;
+      padding: 4px;
+    }
     
-    border: 2px solid #b9b7b7;
   }
 
-.card6{
-    justify-content: center;
-  /* background-color: #3b82f6; */
-  align-items: center;
-  
-  width: 280px;
-}
-
-.programacao{
+.sistema_e_analise {
     display: flex;
     align-items: center;
-    padding: 4%;
+    gap: 15px;
+  
+    img{
+    background-color: #dbd9d97a;
+      border-radius: 6px;
+      padding: 5px;
+    }
     
+
     
+.database_button{
+        border: 2px solid #dbd9d97a;
+        width: 74px;
+        border-radius: 16px;
+        background-color: white;
+        margin-top: 5px;
+    }
+
+}
+
+  .postgre, .sql, .dbeaverbutton, .databutton{
+      border: none;
+      background-color: rgba(188, 206, 251, 0.244) ;
+      margin-top: 10px;
+      border-radius: 16px;
+  
+  }
+  
+  .sql{
+      width: 60px;
+    
+
+    }
+    .dbeaverbutton{
+      width: 70px;
+    }
+    .dbeaverbutton:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+    .postgre:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+    .sql:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+    .databutton:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+   .postgre{
+    width: 90px;
+   }
+   .databutton{
+    width: 99px;
+   }
+  
+  .buttons{
+    display: flex;
+    gap: 20px;
     
   }
-
-  .buton_card6{
-   display: flex;
-  /* background-color: aqua; */
-  gap: 5%;
-  justify-content: center;
-  align-items: center;
-  
-  
-}
-.card7{
-   justify-content: center;
-  /* background-color: #3b82f6; */
-  align-items: center;
-  gap: 5%;
-  width: 280px;
-}
-.buton_card7{
-  display: flex;
-  /* background-color: aqua; */
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
- 
 }
 
-.border_card7{
-  border-radius: 14px;
-  border: 2px solid #e5e7eb;
-  height: 120px;
-  width: 40%;
-}
+ .paragrafo{ 
+  margin-top: 20px;
+   line-height: 1.5; 
+   color: #4b5563;
+ }
 
-.border_card7:hover{
-    
-    border: 2px solid #b9b7b7;
-  }
-
-.desenvolvimento_web{
+.button_github, .button_ver_mais{
   display: flex;
     align-items: center;
-    padding: 4%;
+    background-color: white;
+    width: 120px;
+     border: 1px solid black;
+     border-radius: 7px;
+     outline: none;
+    justify-content: center;
+     
+    img{
+      width: 30px;
+     }
     
 }
 
-.buton_card8{
-   display: flex;
-  /* background-color: aqua; */
-  gap: 3%;
-  justify-content: center;
-  align-items: center;
+.button_github:hover{
+  background-color: #02122c;
+  color: whitesmoke;
   
-
-    
+}
+.button_github:hover img{
+   filter: brightness(0) invert(1);
 }
 
-.border_card8{
-  border-radius: 14px;
-  border: 2px solid #e5e7eb;
-  height: 120px;
-  width: 40%;
-}
-.border_card8:hover{
-    
-    border: 2px solid #b9b7b7;
-  }
-.analise_e_visualizacao{
+
+.button_git_ver_mais{
   display: flex;
-    align-items: center;
-    padding: 2%;
+  gap: 10px;
+  
 }
 
-.buton_card5 button:hover{
-  background-color: #022051;
-  color: white;
+.button_ver_mais:hover{
+  background-color: #02122c;
+  color: whitesmoke;
+  
 }
-
+.button_ver_mais:hover img{
+   filter: brightness(0) invert(1);
 }
-
-

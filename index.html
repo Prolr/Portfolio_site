@@ -225,8 +225,8 @@
 
                 <div class="buton_card6">
                     <button>Python</button>
-                    <button>Java</button>
-                    <button>JavaScript</button>
+                    <button >Java</button>
+                    <button class="jav">JavaScript</button>
                 </div>
             </div>
             <!-- CARD 7 -->
@@ -244,8 +244,8 @@
                        
                         <button>HTML</button>
                         <button>CSS</button>
-                        <button>JavaScript</button>
-                        <button>Responsive Design</button>
+                        <button class="jav">JavaScript</button>
+                        <button class="resp">Responsive/Design</button>
                         <button>UI/UX</button>
                         
                     </div>
@@ -255,15 +255,15 @@
             <div class="border_card8">
                <div class="card8">
                     <div class="analise_e_visualizacao">
-                        <img src="asseds/icon_insights azul.png" alt="imagem de barras representando dashboard" width="50">
+                        <img src="asseds/visualizacao-de-dados.png" alt="imagem de barras representando dashboard" width="50">
                         <h3>Análise e Visualização</h3>
                     </div>
                 </div>
 
                     <div class="buton_card8">
-                        <button>Data Analysis</button>
-                        <button>Statistical Analysis</button>
-                        <button>Data Visualization</button>
+                        <button class="dataanaly">Data Analysis</button>
+                        <button class="statist">Statistical Analysis</button>
+                        <button class="datavi">Data Visualization</button>
                         <button>Reporting</button>
                     </div>
 
@@ -276,9 +276,9 @@
             <div class="card9">
                 <h3>Sempre Aprendendo</h3>
                 <p>
-                    Acredito que a tecnologia está em constante evolução, e por isso me mantenho <br>
+                        Acredito que a tecnologia está em constante evolução, e por isso me mantenho <br>
                     sempre atualizado com as últimas tendências em banco de dados, análise de dados e <br>
-                    desenvolvimento. Estou sempre pronto para novos desafios!
+                            desenvolvimento. Estou sempre pronto para novos desafios!
                 </p>
             </div>
 
@@ -288,44 +288,62 @@
     </section>
 
     <!-- QUARTA SESSÃO "Projetos & Experiência" -->
-    <section class="projetos_experiencia">
-        <div>
-            <h2>Projetos & Experiência</h3>
-                <p>Alguns dos projetos que desenvolvi durante minha jornada acadêmica e profissional</p>
+    <section class="quarta_sessão">
+        
+        <h2 class="titulo">Projetos & Experiência</h2>
+        <p class="subtitulo">Alguns dos projetos que desenvolvi durante minha jornada acadêmica e profissional</p>
+
+        <div class="vdd">
+            
+               
 
                 <!-- CARD10 Sistema de Análise de Banco de Dados  -->
                 <div class="card10">
-                    <img src="asseds/icons_banco-de-dados.png" alt="logotipo de banco de dados" width="50">
 
-                    <h3>Sistema de Análise de Banco de Dados</h3>
+                    <div class="sistema_e_analise">
+                        <img src="asseds/icons_banco-de-dados.png" alt="logotipo de banco de dados" width="50">
+                    
+                        <div class="comb">
+                            <h3>Sistema de Análise de Banco de Dados</h3>
+                            <button class="database_button">Database</button>
+                        </div>
+                    </div>
+                    
+                       <div  class="paragrafo"> 
+                        <p>Desenvolvimento de queries complexas e otimização de performance em PostgreSQL. Projeto focado em análise de grandes volumes de 
+                            dados com relatórios automatizados. 
+                        </p>
+                        </div>
 
-                    <button>Database</button>
-
-                    <p>Desenvolvimento de queries complexas e otimização de performance <br>
-                        em PostgreSQL. Projeto focado em análise de grandes volumes de <br>
-                        dados com relatórios automatizados. <br>
-                    </p>
-
-                    <button>PostgreSQL</button>
-                    <button>SQL</button>
-                    <button>DBeaver</button>
-                    <button>Data Analysis</button>
-
+                        <div class="buttons">
+                            <button class="postgre">PostgreSQL</button>
+                            <button class="sql">SQL</button>
+                            <button class="dbeaverbutton">DBeaver</button>
+                            <button class="databutton">Data Analysis</button>
+                        </div>
                     <br>
+                        <div class="button_git_ver_mais">
+                            <a href="https://github.com/Prolr">
+                                
+                                <button class="button_github"> <img src="asseds/icone_github.png" alt="logotipo do github" width="50"> GitHub </button>
+                            </a>
+                     
+                            <a href="https://github.com/Prolr"></a>
+                                
+                                <button class="button_ver_mais"> <img src="asseds/icon-external-link.png" alt=" logotipo de compartilhamento de link"
+                                        width="50">Ver Mais</button>
+                            </a>
 
-                    <a href="https://github.com/Prolr">
-                        <button> <img src="asseds/icone_github.png" alt="logotipo do github" width="50"> GitHub</button>
-                    </a>
-
-                    <button> <img src="asseds/icon-external-link.png" alt=" logotipo de compartilhamento de link"
-                            width="50">Ver Mais</button>
+                        </div>
 
                 </div>
                 <!-- CARD11 Dashboard de Visualização de Dados -->
                 <div class="card11">
+                    <div class="dashboard_de_visualização">
                     <img src="asseds/icon_grafico de barras.png" alt="logotipo de grafico de barras" width="50">
 
                     <h3>Dashboard de Visualização de Dados</h3>
+                    </div>
                     <button>Analytics</button>
 
                     <p>Criação de dashboards interativos para visualização de dados <br>
@@ -348,8 +366,10 @@
                 </div>
                 <!-- CARD12 Aplicação Web Responsiva -->
                 <div class="card12">
+                    <div class="aplicacaoweb">
                     <img src="asseds/icon_navegador.png" alt="logotivo navegador web" width="50">
                     <h3>Aplicação Web Responsiva</h3>
+                    </div>
                     <button>Web Development</button>
                     <p>Desenvolvimento de interfaces web modernas e responsivas com foco <br>
                         na experiência do usuário e performance. <br>
@@ -371,8 +391,10 @@
                 </div>
                 <!-- CARD13 Scripts de Automação -->
                 <div class="card13">
+                    <div class="scripts_automacao">
                     <img src="asseds/icon_codigo_fonte.png" alt="logotipo de programação" width="50">
                     <h3>Scripts de Automação</h3>
+                    </div>
                     <button>Automation</button>
                     <p>Desenvolvimento de scripts para automação de tarefas repetitivas em <br>
                         análise de dados e processamento de informações.
