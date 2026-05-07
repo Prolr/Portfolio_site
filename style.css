@@ -8,6 +8,8 @@
 /* Fonte padrão do site */
 body {
   font-family: Arial, sans-serif;
+  
+  
 }
 
 /* ================= CABEÇALHO ================= */
@@ -22,6 +24,10 @@ header {
   backdrop-filter: blur(20px);
   z-index: 999;
   box-shadow:0 10px 10px rgba(0, 0, 0, 0.03) ;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Área do nome/logo */
@@ -212,6 +218,7 @@ button {
     justify-content: center;
     font-size: 55px;
     padding: 4%;
+    margin-top: 4%;
   }
 
   /* Container dos cards */
@@ -233,6 +240,11 @@ button {
     border-radius: 14px;
     border: 2px solid #e5e7eb;
     box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03);
+
+    p{
+    color: #4b5563;
+    margin: 5px;
+  }
 
     img {
       background-color: #dbd9d97a;
@@ -258,6 +270,7 @@ button {
     font-size: 50px;
     padding: 3%;
     margin-left: -2%;
+    margin-top: 4%;
   }
 
   /* ===== CARD 5 (Banco de Dados) ===== */
@@ -674,7 +687,7 @@ button {
     gap: 20px;
     
   }
-}
+
 
  .paragrafo{ 
   margin-top: 20px;
@@ -722,3 +735,424 @@ button {
 .button_ver_mais:hover img{
    filter: brightness(0) invert(1);
 }
+
+
+.dashboard_de_visualização22{
+   display: flex;
+    align-items: center;
+    gap: 15px;
+  
+    img{
+    background-color: #dbd9d97a;
+      border-radius: 6px;
+      padding: 9px;
+    }
+    
+
+    
+.database_button{
+        border: 2px solid #dbd9d97a;
+        width: 74px;
+        border-radius: 16px;
+        background-color: white;
+        margin-top: 5px;
+    }
+
+}
+
+.python1{
+  width: 70px;
+}
+.python1:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+.PowerBI1{
+  width: 70px;
+}
+.PowerBI1:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+.data_visualization{
+  width: 120px;
+}
+.data_visualization:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+.Statistics1{
+  width: 80px;
+}
+.Statistics1:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+
+.python1, .PowerBI1, .data_visualization, .Statistics1{
+      border: none;
+      background-color: rgba(188, 206, 251, 0.244) ;
+      margin-top: 10px;
+      border-radius: 16px;
+      margin-top: 33px;
+  
+  }
+
+
+   
+.button_git_ver_mais1{
+  display: flex;
+  gap: 20px;
+  margin-top: -1px;
+  
+}
+
+.button_github:hover{
+  background-color: #02122c;
+  color: whitesmoke;
+  
+}
+.button_ver_mais:hover img{
+   filter: brightness(0) invert(1);
+} 
+
+.buttons1{
+    display: flex;
+    gap: 20px;
+    margin-top: 1px;
+    
+  }
+
+.analytics{
+  border: 2px solid #dbd9d97a;
+        width: 74px;
+        border-radius: 16px;
+        background-color: white;
+        margin-top: 5px;
+}
+
+
+.aplicacaoweb{
+   display: flex;
+    align-items: center;
+    gap: 15px;
+  
+    img{
+    background-color: #dbd9d97a;
+      border-radius: 6px;
+      padding: 5px;
+    }
+    
+}
+
+.buttons2{
+   display: flex;
+    gap: 20px;
+    margin-top: -3.7px;
+}
+
+
+.html, .css, .java_script, .responsive{
+      border: none;
+      background-color: rgba(188, 206, 251, 0.244) ;
+      margin-top: 10px;
+      border-radius: 16px;
+      margin-top: 33px;
+  
+  }
+
+
+
+  
+.html{
+  width: 50px;
+}
+.html:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+.css{
+  width: 47px;
+}
+.css:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+.java_script{
+  width: 90px;
+}
+.java_script:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+.responsive{
+  width: 130px;
+}
+.responsive:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+.web_development{
+  border: 2px solid #dbd9d97a;
+        width: 135px;
+        border-radius: 16px;
+        background-color: white;
+        margin-top: 5px;
+}
+.aplicacaoweb{
+  display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: -4%;
+  
+    img{
+    background-color: #dbd9d97a;
+      border-radius: 6px;
+      padding: 5px;
+    }
+    
+  }
+
+.Automation, .data_processing, .python2, .sql2{
+      border: none;
+      background-color: rgba(188, 206, 251, 0.244) ;
+      margin-top: 10px;
+      border-radius: 16px;
+      margin-top: 33px;
+
+  
+  }
+.buttons3{
+  display: flex;
+    gap: 20px;
+    margin-top: -29px;
+}
+
+
+ 
+.python2{
+  width: 60px;
+}
+.python2:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+.sql2{
+  width: 47px;
+}
+.sql2:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+.Automation{
+  width: 90px;
+}
+.Automation:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+.data_processing{
+  width: 115px;
+  height: 16px;
+}
+.data_processing:hover{
+      background-color: #02122c;
+      color: whitesmoke;
+    }
+
+
+.scripts_automacao{
+  display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: -4%;
+}
+    .scripts_automacao img{
+    background-color: #dbd9d97a;
+      border-radius: 6px;
+      padding: 6px;
+     
+    }
+
+.automation{
+  border: 2px solid #dbd9d97a;
+        width: 90px;
+        border-radius: 16px;
+        background-color: white;
+        margin-top: 5px;
+}
+
+
+
+
+
+
+
+}
+
+
+                                      /* QUINTA SESSÃO Vamos Conversar  */
+
+.quinta_sessao{
+
+
+h2{
+  font-size: 48px;
+    justify-content: center;
+    display: flex;
+    margin-top: 10%;
+    
+    
+}
+
+.paragrafo_contato{
+    justify-content: center;
+    display: flex;
+    color: #4b5563;
+    font-size: 18px;
+   
+    
+    margin-top: 3%;
+    
+}
+.card14,.card15, .card16{
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  align-items: center;     /* centraliza horizontal */
+  justify-content: center; /* centraliza vertical (se tiver altura) */
+  text-align: center;      /* centraliza textos */
+  display: flex;
+  flex-direction: column;
+  margin-top: 6%;
+  
+  
+}
+
+.card14:hover{
+ border: 2px solid #b9b7b7;
+}
+
+.card15:hover{
+ border: 2px solid #b9b7b7;
+}
+
+.card16:hover{
+ border: 2px solid #b9b7b7;
+}
+
+
+.cards-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.Visitar_git{
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 100px;
+  border: 1px solid black;
+}
+.Visitar_git:hover{
+  background-color: #02122c;
+      color: whitesmoke;
+}
+.conectar_linkedin{
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 147px;
+  border: 1px solid black;
+}
+.conectar_linkedin:hover{
+  background-color: #02122c;
+      color: whitesmoke;
+}
+.enviar_email{
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 100px;
+  border: 1px solid black;
+}
+.enviar_email:hover{
+  background-color: #02122c;
+      color: whitesmoke;
+}
+
+.paragrafo_linkedin{
+  margin-top: 5px;
+}
+
+.email_entre{
+  margin-top: 6px;
+}
+
+
+}
+.quinta_sessao p{
+    color: #4b5563;
+   }
+
+.card-highlight2 {
+    
+    padding: 15px;
+    background-color: #f9fafb;
+    border-left: 4px solid #3b82f6;
+    border-radius: 6px;
+    border-bottom: 2px solid #d4d1d1;
+    box-shadow:0 9px 10px rgba(203, 201, 201, 0.249);
+    margin: 30px auto;
+    width: 78%;
+    
+    
+  }
+.info_insta{
+  display: flex;
+  justify-content: center;
+  
+  img_insta a{
+    display: flex;
+  }
+  .img_insta{
+    margin: -5px 6px 0 6px;
+   height: 25px;
+   
+    
+  }
+  a {
+  text-decoration: none;
+  gap: 80px;
+  
+}
+  a:hover {
+   opacity: 0.7;
+  
+}
+.info_insta p{
+  gap: 10px;
+}
+}
+
+.rodape{
+    text-align: center;
+  padding: 20px;
+}
+
+  
+  .header_name{
+    text-decoration: none;
+    color: black;
+  }
+
