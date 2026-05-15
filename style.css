@@ -297,7 +297,8 @@ button {
     border-radius: 7px;
     border: 2px solid #e5e7eb;
     height: 120px;
-    width: 48%;
+    max-width: 458px;
+    width: 49%;
   }
 
   .border_card5:hover {
@@ -360,7 +361,8 @@ button {
     border-radius: 7px;
     border: 2px solid #e5e7eb;
     height: 120px;
-    width: 48%;
+    max-width: 458px;
+    width: 49%;
   }
 
   .border_card6:hover {
@@ -402,7 +404,9 @@ button {
     border-radius: 7px;
     border: 2px solid #e5e7eb;
     height: 120px;
-    width: 48%;
+    max-width: 458px;
+    width: 49%;
+    
   }
 
   .border_card7:hover {
@@ -468,7 +472,8 @@ button {
    border-radius: 7px;
     border: 2px solid #e5e7eb;
     height: 120px;
-    width: 48%;
+    max-width: 458px;
+    width: 49%;
   }
 
   .border_card8:hover {
@@ -1157,3 +1162,22 @@ h2{
     color: black;
   }
 
+              /*   REPOSIVIDADE DO SITE PARA APARELHOS MOVEIS  */
+
+
+
+
+              
+            /*Celular */
+
+@media screen and (max-width: 700px){
+
+ .card1{
+  width: 49%;
+ }
+
+.border_card7, .border_card8, .border_card6, .border_card5{
+ width: 100%;
+}
+ 
+}
