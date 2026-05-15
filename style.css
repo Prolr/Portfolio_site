@@ -84,7 +84,7 @@ button {
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 100vh;
-
+  
   justify-content: center;
   align-items: center;
   display: flex;
@@ -265,7 +265,7 @@ button {
 /* ================= TERCEIRA SESSÃO ================= */
 .terceira_sessao {
   align-items: center;
-
+  
   h2 {
     font-size: 50px;
     padding: 3%;
@@ -298,7 +298,8 @@ button {
     border: 2px solid #e5e7eb;
     height: 120px;
     max-width: 458px;
-    width: 49%;
+    width: 100%;
+    
   }
 
   .border_card5:hover {
@@ -362,7 +363,8 @@ button {
     border: 2px solid #e5e7eb;
     height: 120px;
     max-width: 458px;
-    width: 49%;
+    width: 100%;
+    
   }
 
   .border_card6:hover {
@@ -405,7 +407,9 @@ button {
     border: 2px solid #e5e7eb;
     height: 120px;
     max-width: 458px;
-    width: 49%;
+    width: 100%;
+    
+    
     
   }
 
@@ -473,7 +477,8 @@ button {
     border: 2px solid #e5e7eb;
     height: 120px;
     max-width: 458px;
-    width: 49%;
+    width: 100%;
+   
   }
 
   .border_card8:hover {
@@ -1162,6 +1167,7 @@ h2{
     color: black;
   }
 
+
               /*   REPOSIVIDADE DO SITE PARA APARELHOS MOVEIS  */
 
 
@@ -1169,15 +1175,33 @@ h2{
 
               
             /*Celular */
-
 @media screen and (max-width: 700px){
 
- .card1{
-  width: 49%;
- }
+  .header_name{
+    display: flex;
+    width: 140px;
+  }
 
-.border_card7, .border_card8, .border_card6, .border_card5{
- width: 100%;
-}
- 
+  .navegacao{
+    display: none;
+  }
+
+
+  .border_card5,
+  .border_card6,
+  .border_card7,
+  .border_card8{
+    max-width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
 }
