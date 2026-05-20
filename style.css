@@ -226,7 +226,7 @@ button {
     flex-wrap: wrap;
     display: flex;
     margin: 4%;
-    max-width: 72%;
+    max-width: 100%;
     gap: 30px;
     justify-content: center;
   }
@@ -437,6 +437,7 @@ button {
   }
   .jav{
     width: 80px;
+    max-width: 999%;
   }
   }
     .buton_card7 button:hover {
@@ -490,7 +491,7 @@ button {
     gap: 1%;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
   
     button{
       border: none;
@@ -502,6 +503,7 @@ button {
     }
   .dataanaly{
     width: 90px;
+    
   }
   .statist{
     width: 120px;
@@ -1174,7 +1176,7 @@ h2{
 
 
               
-            /*Celular */
+            /* Celular */
 @media screen and (max-width: 700px){
 
   .header_name{
@@ -1186,14 +1188,73 @@ h2{
     display: none;
   }
 
+  .DivCards2, .card2, .card3, .card4{
+    width: auto !important;
+    flex-wrap: wrap !important;
+    display: auto !important;
+    gap: auto !important;
+    
+  }
+  .card1, h3{
+    width: auto !important;
+    display: flex;
+    gap: 20px;
+    
+    
+  }
 
   .border_card5,
   .border_card6,
   .border_card7,
   .border_card8{
     max-width: 100%;
+   
   }
 
+
+.buton_card5 button{
+  width: auto;
+    min-width: fit-content;
+    padding: 2px 6px;
+    
+}
+.buton_card5{
+     display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 4px 8px !important;
+    
+    
+  }
+
+.buton_card7, .buton_card8{
+     display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 4px 8px !important;
+    
+    
+  }
+
+  .buton_card7, .buton_card8 button{
+
+   width: auto;
+    min-width: fit-content;
+    padding: 2px 6px;
+    
+  }
+  .desenvolvimento_web{
+   
+   width: auto !important;
+    
+    gap: 3px !important;
+  }
+
+
+  .terceira_sessao h2{
+    font-size: clamp(18px, 9vw, 50px);
+    word-break: break-word;
+     text-align: center;
+  
+  }
 
 
 
