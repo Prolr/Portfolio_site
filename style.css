@@ -1191,17 +1191,25 @@ h2{
   .DivCards2, .card2, .card3, .card4{
     width: auto !important;
     flex-wrap: wrap !important;
-    display: auto !important;
-    gap: auto !important;
     
   }
-  .card1, h3{
+
+
+  .card1, .card2, .card4, h3{
     width: auto !important;
     display: flex;
-    gap: 20px;
-    
-    
+    gap: 20px; 
   }
+ 
+
+   .img_h3_desenvolvimento{
+    display: flex !important;
+    align-items: center;
+    gap: 20px !important;
+    width: auto !important;
+    margin-left: 6%;
+  }
+  
 
   .border_card5,
   .border_card6,
