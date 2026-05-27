@@ -1193,21 +1193,40 @@ h2{
     flex-wrap: wrap !important;
     
   }
+ 
 
-
-  .card1, .card2, .card4, h3{
+.card1{
+width: auto !important;
+}
+  .card1 .card1_img{
+    align-items: center;
+    display: flex !important;
+    gap: 20px;
+  }
+.card2{
+width: auto !important
+}
+  .card2 .card2_img{
+    align-items: center;
+    display: flex !important;
+    gap: 20px;
+  }
+  .card4, h3{
     width: auto !important;
-    display: flex;
     gap: 20px; 
   }
- 
+  .card4 .card4_img{
+    align-items: center;
+    display: flex !important;
+    gap: 20px;
+  }
 
    .img_h3_desenvolvimento{
     display: flex !important;
     align-items: center;
     gap: 20px !important;
     width: auto !important;
-    margin-left: 6%;
+    margin-left: -1%;
   }
   
 
@@ -1216,9 +1235,10 @@ h2{
   .border_card7,
   .border_card8{
     max-width: 100%;
-   
   }
-
+.border_card7, .border_card5{
+  height: 128px !important;
+}
 
 .buton_card5 button{
   width: auto;
@@ -1253,7 +1273,7 @@ h2{
    
    width: auto !important;
     
-    gap: 3px !important;
+    gap: 8px !important;
   }
 
 
@@ -1265,9 +1285,18 @@ h2{
   }
 
 
+.card9, h3{
+  width: 90% !important;
+  flex-wrap: wrap !important;
+}
 
 
-
+.quarta_sessão h2{
+ font-size: clamp(18px, 9vw, 30px);
+    word-break: break-word;
+     text-align: center;
+     width: 100% !important;
+}
 
 
 
