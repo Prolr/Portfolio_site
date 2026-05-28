@@ -233,14 +233,13 @@ button {
 
   /* ===== CARDS 1 A 4 ===== */
   .card1, .card2, .card3, .card4 {
-    justify-content: center;
-    align-items: center;
-    padding: 20px 40px;
-    width: 48%;
-    border-radius: 14px;
-    border: 2px solid #e5e7eb;
-    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03);
-    flex-wrap: wrap;
+  flex: 1 1 400px;
+  padding: 20px 40px;
+  border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.03);
+
+  max-width: 500px;
     p{
     color: #4b5563;
     margin: 5px;
@@ -451,7 +450,7 @@ button {
     align-items: center;
     padding: 4%;
     gap: 10px;
-    width: 130%;
+   
     
 
     img{
@@ -1175,8 +1174,8 @@ h2{
 
 
 
-              
-            /* Celular */
+/* ================= RESPONSIVIDADE MOBILE ================= */
+
 @media screen and (max-width: 700px){
 
   .header_name{
@@ -1188,116 +1187,151 @@ h2{
     display: none;
   }
 
-  .DivCards2, .card2, .card3, .card4{
-    width: auto !important;
-    flex-wrap: wrap !important;
-    
-  }
- 
+  /* ================= CARDS SOBRE MIM ================= */
 
-.card1{
-width: auto !important;
-}
-  .card1 .card1_img{
-    align-items: center;
-    display: flex !important;
-    gap: 20px;
-  }
-.card2{
-width: auto !important
-}
-  .card2 .card2_img{
-    align-items: center;
-    display: flex !important;
-    gap: 20px;
-  }
-  .card4, h3{
-    width: auto !important;
-    gap: 20px; 
-  }
-  .card4 .card4_img{
-    align-items: center;
-    display: flex !important;
-    gap: 20px;
+  .card1,
+  .card2,
+  .card3,
+  .card4{
+    flex: 1 1 100%;
   }
 
-   .img_h3_desenvolvimento{
+  .DivCards2{
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .card1 .card1_img,
+  .card2 .card2_img,
+  .card4 .card4_img,
+  .img_h3_desenvolvimento{
     display: flex !important;
     align-items: center;
-    gap: 20px !important;
-    width: auto !important;
-    margin-left: -1%;
+    gap: 15px !important;
+    width: 100%;
   }
   
+
+  .card1 h3,
+  .card2 h3,
+  .card3 h3,
+  .card4 h3{
+    width: auto !important;
+    font-size: 22px;
+  }
+
+  .card1 p,
+  .card2 p,
+  .card3 p,
+  .card4 p{
+    width: 100%;
+    word-break: break-word;
+    line-height: 1.4;
+  }
+
+  /* ================= TERCEIRA SESSÃO ================= */
+
+  .terceira_sessao h2{
+    font-size: clamp(18px, 9vw, 50px);
+    word-break: break-word;
+    text-align: center;
+  }
 
   .border_card5,
   .border_card6,
   .border_card7,
   .border_card8{
     max-width: 100%;
-  }
-.border_card7, .border_card5{
-  height: 128px !important;
-}
-
-.buton_card5 button{
-  width: auto;
-    min-width: fit-content;
-    padding: 2px 6px;
-    
-}
-.buton_card5{
-     display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 4px 8px !important;
-    
-    
+    height: auto !important;
+    padding-bottom: 15px;
   }
 
-.buton_card7, .buton_card8{
-     display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 4px 8px !important;
-    
-    
+  .border_card5,
+  .border_card7{
+    min-height: 128px;
   }
 
-  .buton_card7, .buton_card8 button{
-
-   width: auto;
-    min-width: fit-content;
-    padding: 2px 6px;
-    
-  }
   .desenvolvimento_web{
-   
-   width: auto !important;
-    
     gap: 8px !important;
+    flex-wrap: wrap;
+    display: flex !important;
   }
 
-
-  .terceira_sessao h2{
-    font-size: clamp(18px, 9vw, 50px);
-    word-break: break-word;
-     text-align: center;
-  
+  .desenvolvimento_web h3{
+    font-size: 20px;
   }
 
+  .buton_card5,
+  .buton_card7,
+  .buton_card8{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    justify-content: center;
+    padding: 8px;
+  }
 
-.card9, h3{
-  width: 90% !important;
-  flex-wrap: wrap !important;
-}
+  .buton_card5 button,
+  .buton_card7 button,
+  .buton_card8 button{
+    width: auto !important;
+    min-width: fit-content;
+    padding: 4px 10px;
+    font-size: 12px;
+  }
 
+  /* ================= CARD 9 ================= */
 
-.quarta_sessão h2{
- font-size: clamp(18px, 9vw, 30px);
+  .card9{
+    width: 90% !important;
+    padding: 20px;
+  }
+
+  .card9 h3{
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .card9 p{
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  /* ================= QUARTA SESSÃO ================= */
+
+  .quarta_sessão h2{
+    font-size: clamp(18px, 9vw, 30px);
     word-break: break-word;
-     text-align: center;
-     width: 100% !important;
-}
+    text-align: center;
+    width: 100% !important;
+  }
 
+  .subtitulo{
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .card10,
+  .card11,
+  .card12,
+  .card13{
+    width: 90% !important;
+    max-width: 100% !important;
+  }
+
+  .buttons,
+  .buttons1,
+  .buttons2,
+  .buttons3{
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .button_git_ver_mais,
+  .button_git_ver_mais1{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
 
 
