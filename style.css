@@ -1354,7 +1354,12 @@ h2{
 /* ================= RESPONSIVIDADE MOBILE ================= */
 
 @media screen and (max-width: 700px){
-
+.buton_card5 button,
+.buton_card6 button,
+.buton_card7 button,
+.buton_card8 button {
+    color: green !important;
+}
   .header_name{
     display: flex;
     width: 140px;
