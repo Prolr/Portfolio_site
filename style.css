@@ -26,6 +26,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+button {
+    background: red !important;
+    color: white !important;
+}
 
 /* ===================================================================
    2. CONFIGURAÇÕES GERAIS
