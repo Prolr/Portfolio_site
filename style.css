@@ -1343,12 +1343,7 @@ h2{
   }
 
 /* teste para consertar layout mobile  */
-  .buton_card5 button,
-  .buton_card6 button,
-  .buton_card7 button,
-  .buton_card8 button {
-    color: black !important;
-}
+
 
 
               /*   REPOSIVIDADE DO SITE PARA APARELHOS MOVEIS  */
@@ -1716,8 +1711,10 @@ h2{
 }
 
 
-
-
+button {
+    color: red !important;
+    background: yellow !important;
+}
 
 
 
