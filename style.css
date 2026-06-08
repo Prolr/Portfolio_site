@@ -1355,6 +1355,7 @@ h2{
 
 @media screen and (max-width: 700px){
 button {
+    font-weight: 700;
     color: black !important;
     -webkit-text-fill-color: black !important;
 }
