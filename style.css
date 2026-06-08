@@ -1359,6 +1359,10 @@ button {
     color: black !important;
   
 }
+button :hover{
+  color: whitesmoke;
+
+}
   .header_name{
     display: flex;
     width: 140px;
