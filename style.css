@@ -1354,14 +1354,7 @@ h2{
 /* ================= RESPONSIVIDADE MOBILE ================= */
 
 @media screen and (max-width: 700px){
-.buton_card5 button,
-.buton_card6 button,
-.buton_card7 button,
-.buton_card8 button,
-.card10,
-.database_button,
-.buttons,
-.button_github {
+button {
     color: black !important;
     -webkit-text-fill-color: black !important;
 }
