@@ -1357,7 +1357,7 @@ h2{
 button {
     font-weight: 700;
     color: black !important;
-    -webkit-text-fill-color: black !important;
+  
 }
   .header_name{
     display: flex;
