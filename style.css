@@ -1005,12 +1005,7 @@ button {
    filter: brightness(0) invert(1);
 } 
 
-.buttons1{
-    display: flex;
-    gap: 20px;
-    margin-top: 0px;
-    
-  }
+
 
 .analytics{
   border: 2px solid #dbd9d97a;
@@ -1034,11 +1029,6 @@ button {
     
 }
 
-.buttons2{
-   display: flex;
-    gap: 20px;
-    margin-top: -3.7px;
-}
 
 
 .html, .css, .java_script, .responsive{
@@ -1354,7 +1344,8 @@ h2{
 /* ================= RESPONSIVIDADE MOBILE ================= */
 
 @media screen and (max-width: 700px){
-button {
+
+  button {
     font-weight: 700;
     color: black !important;
   
@@ -1455,7 +1446,7 @@ button :hover{
   .buton_card8{
     display: flex !important;
     flex-wrap: wrap !important;
-    gap: 6px !important;
+    gap: 20px !important;
     justify-content: center;
     padding: 8px;
   }
@@ -1510,8 +1501,7 @@ button :hover{
   }
 
   .buttons,
-  .buttons1,
-  .buttons2,
+  
   .buttons3{
     display: flex;
     flex-wrap: wrap;
@@ -1521,6 +1511,23 @@ button :hover{
     
   
   }
+
+.buttons1{
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    
+  }
+
+
+
+  .buttons2{
+   display: flex;
+    gap: 10px;
+    margin-top: -3.7px;
+    flex-wrap: wrap;
+}
+
 
 
   .button_git_ver_mais,
