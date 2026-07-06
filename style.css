@@ -1377,6 +1377,25 @@ h2{
     visibility: visible;
 }
 
+/* ================================
+   CORREÇÃO DEFINITIVA LINKS MOBILE
+================================ */
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:link {
+  color: inherit !important;
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Safari/iOS override extra forte */
+a:-webkit-any-link {
+  color: inherit !important;
+}
+
               /*   REPOSIVIDADE DO SITE PARA APARELHOS MOVEIS  */
 
 
