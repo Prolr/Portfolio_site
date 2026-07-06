@@ -18,6 +18,19 @@
    9. Responsividade Mobile
 ===================================================== */
 
+/* ==========================================================
+   MENU HAMBÚRGUER
+========================================================== */
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 34px;
+    color: #000;
+    z-index: 1001;
+}
 
 
 /* ================= RESET GLOBAL ================= */
@@ -55,14 +68,16 @@ html {
 /* Header fixo com efeito de blur */
 header {
   display: flex;
-  background-color: rgba(229, 228, 228, 0.681);
+  background: rgba(20, 20, 20, 0.2);
   width: 100%;
   justify-content: space-between;
   padding: 1.6%;
   position: fixed;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   z-index: 999;
-  box-shadow:0 10px 10px rgba(0, 0, 0, 0.03) ;
+  box-shadow: 0 8px 30px rgba(0,0,0,.15);
+  border: 1px solid rgba(255,255,255,.15);
 }
 
 
@@ -1334,7 +1349,33 @@ h2{
 
 
   
+/* ==========================================================
+   MENU HAMBÚRGUER
+========================================================== */
 
+.menu-toggle{
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 34px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: .35s;
+    z-index: 999;
+}
+
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
 
               /*   REPOSIVIDADE DO SITE PARA APARELHOS MOVEIS  */
 
@@ -1345,10 +1386,13 @@ h2{
 
 @media screen and (max-width: 700px){
 
-  button {
-    font-weight: 700;
-    color: black !important;
-  
+  .DivCards button,
+.buton_card5 button,
+.buton_card7 button,
+.buton_card8 button,
+.buttons button{
+    font-weight:700;
+    color:black;
 }
 button :hover{
   color: whitesmoke;
@@ -1359,9 +1403,7 @@ button :hover{
     width: 140px;
   }
 
-  .navegacao{
-    display: none;
-  }
+  
 
   /* ================= CARDS SOBRE MIM ================= */
 
@@ -1436,8 +1478,8 @@ button :hover{
 
   .desenvolvimento_web h3{
     font-size: 20px;
-   white-space: normal;
-     line-height: 1.1;
+    white-space: normal;
+    line-height: 1.1;
     
   }
 
@@ -1507,7 +1549,7 @@ button :hover{
   }
   
   .buttons3{
-   display: flex;
+    display: flex;
     gap: 4px;
     flex-wrap: wrap;
     
@@ -1522,7 +1564,14 @@ button :hover{
     
   }
 
+.buttons1,
+.python1,
+.PowerBI1,
+.data_visualization,
+.Statistics1{
 
+  color:black
+}
 
   .buttons2{
   display: flex;
@@ -1597,7 +1646,7 @@ button :hover{
 
 
 .info_insta{
-   flex-direction: row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5px;
@@ -1715,15 +1764,107 @@ button :hover{
     line-height: 1.5;
 }
 
-  .header_name{
-      width: auto;
-      white-space: nowrap;
-      font-size: 30px;
-  }
+  .h .header_name{
+    white-space: nowrap;
+    font-size: 20px;
+}
 
-  .navegacao{
-      display: none !important;
-  }
+.menu-toggle{
+    display: block;
+    position: relative;
+    background: transparent;
+    border: none;
+    font-size: 34px;
+    cursor: pointer;
+    transition: .3s;
+    color: #000000;
+}
+
+.navegacao{
+    position: fixed;
+    top: 0;
+    right: -280px;
+
+    width: 260px;
+    height: 100vh;
+
+    background: rgba(20,20,20,.92);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: right .35s ease;
+
+    box-shadow: -20px 0 50px rgba(0,0,0,.35);
+
+    z-index:1000;
+}
+
+.navegacao ul{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacao li{
+    opacity:0;
+    transform:translateX(30px);
+    transition:.35s;
+}
+
+.navegacao.active li{
+    opacity:1;
+    transform:translateX(0);
+}
+
+.navegacao a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .5px;
+
+    transition: .25s;
+}
+
+.navegacao a:hover{
+    color:#6C63FF;
+    transform: translateX(10px);
+}
+
+.navegacao.active{
+    right: 0;
+}
+
+.menu-toggle.active{
+    transform: rotate(90deg);
+    color: white;
+}
+.vdd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card10,
+.card11,
+.card12,
+.card13{
+    width: 90%;
+    max-width: 500px;
+}
 
 }
 
