@@ -1398,6 +1398,10 @@ h2{
     font-weight:700;
     color:black;
 }
+  button {
+    font-weight: 700;
+    color: black !important;}
+
 button :hover{
   color: whitesmoke;
 
