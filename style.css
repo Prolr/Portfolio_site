@@ -1400,7 +1400,7 @@ h2{
 }
   button {
     font-weight: 700;
-    color: black !important;}
+    color: auto !important;}
 
 button :hover{
   color: whitesmoke;
