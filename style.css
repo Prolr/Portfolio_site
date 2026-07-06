@@ -1403,7 +1403,7 @@ h2{
     color: black;}
 
 button :hover{
-  color: whitesmoke;
+  color: whitesmoke !important;
 
 }
   .header_name{
